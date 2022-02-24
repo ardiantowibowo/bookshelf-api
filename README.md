@@ -95,15 +95,19 @@ Bila buku berhasil dimasukkan, server harus mengembalikan respons dengan:
 <br><b>Kriteria 2 : API dapat menampilkan seluruh buku</b></br>
 API yang Anda buat harus dapat menampilkan seluruh buku yang disimpan melalui route:
 
-Method : GET
-URL: /books
+<ul>
+  <li>Method : GET</li>
+  <li>URL: /books</li>
+</ul>
 
 Server harus mengembalikan respons dengan:
 
-Status Code : 200
-Response Body:
+<ul>
+  <li>Status Code : 200</li>
+  <li>Response Body:</li>
+</ul>
 
-{
+<pre>{
     "status": "success",
     "data": {
         "books": [
@@ -124,38 +128,44 @@ Response Body:
             }
         ]
     }
-}
+}</pre>
 Jika belum terdapat buku yang dimasukkan, server bisa merespons dengan array books kosong.
 
-{
+<pre>{
     "status": "success",
     "data": {
         "books": []
     }
-}
+}</pre>
 
 
-Kriteria 3 : API dapat menampilkan detail buku
+<br><b>Kriteria 3 : API dapat menampilkan detail buku</b></br>
 API yang Anda buat harus dapat menampilkan seluruh buku yang disimpan melalui route:
 
-Method : GET
-URL: /books/{bookId}
+<ul>
+  <li>Method : GET</li>
+  <li>URL: /books/{bookId}</li>
+</ul>
 
 Bila buku dengan id yang dilampirkan oleh client tidak ditemukan, maka server harus mengembalikan respons dengan:
 
-Status Code : 404
-Response Body:
+<ul>
+  <li>Status Code : 404</li>
+  <li>Response Body:</li>
+</ul>
 
-{
+<pre>{
     "status": "fail",
     "message": "Buku tidak ditemukan"
-}
+}</pre>
 Bila buku dengan id yang dilampirkan ditemukan, maka server harus mengembalikan respons dengan:
 
-Status Code : 200
-Response Body:
+<ul>
+  <li>Status Code : 200</li>
+  <li>Response Body:</li>
+</ul>
 
-{
+<pre>{
     "status": "success",
     "data": {
         "book": {
@@ -173,17 +183,19 @@ Response Body:
             "updatedAt": "2021-03-05T06:14:30.718Z"
         }
     }
-}
+}</pre>
 
 
-Kriteria 4 : API dapat mengubah data buku
+<br><b>Kriteria 4 : API dapat mengubah data buku</b></br>
 API yang Anda buat harus dapat mengubah data buku berdasarkan id melalui route:
 
-Method : PUT
-URL : /books/{bookId}
-Body Request:
+<ul>
+  <li>Method : PUT</li>
+  <li>URL : /books/{bookId}</li>
+  <li>Body Request:</li>
+</ul>
 
-{
+<pre>{
     "name": string,
     "year": number,
     "author": string,
@@ -192,45 +204,54 @@ Body Request:
     "pageCount": number,
     "readPage": number,
     "reading": boolean
-}
+}</pre>
 Server harus merespons gagal bila:
 
-Client tidak melampirkan properti name pada request body. Bila hal ini terjadi, maka server akan merespons dengan:
-Status Code : 400
-Response Body:
+<ul>
+  <li>Client tidak melampirkan properti name pada request body. Bila hal ini terjadi, maka server akan merespons dengan:</li>
+<ul type='disc'>
+  <li>Status Code : 400</li>
+  <li>Response Body:</li>
+</ul></ul>
 
-{
+<pre>{
     "status": "fail",
     "message": "Gagal memperbarui buku. Mohon isi nama buku"
-}
+}</pre>
 Client melampirkan nilai properti readPage yang lebih besar dari nilai properti pageCount. Bila hal ini terjadi, maka server akan merespons dengan:
-Status Code : 400
-Response Body:
+<ul>
+  <li>Status Code : 400</li>
+  <li>Response Body:</li>
+</ul>
 
-{
+<pre>{
     "status": "fail",
     "message": "Gagal memperbarui buku. readPage tidak boleh lebih besar dari pageCount"
-}
+}</pre>
 Idyang dilampirkan oleh client tidak ditemukkan oleh server. Bila hal ini terjadi, maka server akan merespons dengan:
-Status Code : 404
-Response Body:
+<ul>
+  <li>Status Code : 404</li>
+  <li>Response Body:</li>
+</ul>
 
-{
+<pre>{
     "status": "fail",
     "message": "Gagal memperbarui buku. Id tidak ditemukan"
-}
+}</pre>
 Bila buku berhasil diperbarui, server harus mengembalikan respons dengan:
 
-Status Code : 200
-Response Body:
+<ul>
+  <li>Status Code : 200</li>
+  <li>Response Body:</li>
+</ul>
 
-{
+<pre>{
     "status": "success",
     "message": "Buku berhasil diperbarui"
-}
+}</pre>
 
 
-Kriteria 5 : API dapat menghapus buku
+<br><b>Kriteria 5 : API dapat menghapus buku
 API yang Anda buat harus dapat menghapus buku berdasarkan id melalui route berikut:
 
 Method : DELETE

@@ -1,5 +1,5 @@
 # Bookshelf API
-Proyek <b>Bookshelf API</b> adalah submission <a href="http://www.dicoding.com">dicoding</a> yang saya kerjakan untuk lulus dari kelas back-end.
+Proyek <b>Bookshelf API</b> adalah submission <a href="https://www.dicoding.com">dicoding</a> yang saya kerjakan untuk lulus dari kelas back-end.
 <br>Berikut beberapa kriteria dari Bookshelf API dalam project ini:</br>
 
 <b>Kriteria 1 : API dapat menyimpan buku</b>
@@ -280,3 +280,6 @@ Bila id dimiliki oleh salah satu buku, maka buku tersebut harus dihapus dan serv
     "status": "success",
     "message": "Buku berhasil dihapus"
 }</pre>
+
+# Pengujian API
+Untuk melakukan pengujian <b>Bookshelf API</b> ini, saya menggunakan <b>postman</b>. Berkas Collection dan Environment terdapat pada directory <i>postman</i> saya atau bisa <a href="https://www.">klik disini</a>

@@ -47,7 +47,7 @@ Properti yang ditebalkan diolah dan didapatkan di sisi server. Berikut penjelasa
 <br>Server harus merespons gagal bila:
 
 <ul><li>Client tidak melampirkan properti name pada request body. Bila hal ini terjadi, maka server akan merespons dengan:</li>
-<ul type="disc">
+<ul>
   <li>Status Code : 400</li>
   <li>Response Body:</li>
 </ul></ul>
@@ -209,7 +209,7 @@ Server harus merespons gagal bila:
 
 <ul>
   <li>Client tidak melampirkan properti name pada request body. Bila hal ini terjadi, maka server akan merespons dengan:</li>
-<ul type='disc'>
+<ul>
   <li>Status Code : 400</li>
   <li>Response Body:</li>
 </ul></ul>

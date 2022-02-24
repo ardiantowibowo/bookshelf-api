@@ -282,4 +282,4 @@ Bila id dimiliki oleh salah satu buku, maka buku tersebut harus dihapus dan serv
 }</pre>
 
 # Pengujian API
-Untuk melakukan pengujian <b>Bookshelf API</b> ini, saya menggunakan <b>postman</b>. Berkas Collection dan Environment terdapat pada directory <i>postman</i> saya atau bisa <a href="https://www.">klik disini</a>
+Untuk melakukan pengujian <b>Bookshelf API</b> ini, saya menggunakan <b>postman</b>. Berkas Collection dan Environment terdapat pada directory <i>postman</i> saya atau bisa <a href="https://github.com/ardiantowibowo/postman/tree/main/bookshelf-api">klik disini</a>

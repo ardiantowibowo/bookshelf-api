@@ -283,3 +283,28 @@ Bila id dimiliki oleh salah satu buku, maka buku tersebut harus dihapus dan serv
 
 # Pengujian API
 Untuk melakukan pengujian <b>Bookshelf API</b> ini, saya menggunakan <b>postman</b>. Berkas Collection dan Environment terdapat pada directory <i>postman</i> saya atau bisa <a href="https://github.com/ardiantowibowo/postman/tree/main/bookshelf-api">klik disini</a>
+
+# Kriteria Penilaian Submission
+<ul>
+  <li>Tambahkan fitur query parameters pada route GET /books (Mendapatkan seluruh buku).</li>
+  <ul>
+    </li>?name : Tampilkan seluruh buku yang mengandung nama berdasarkan nilai yang diberikan pada query ini. Contoh /books?name=”dicoding”, maka akan menampilkan daftar buku yang mengandung nama “dicoding” secara non-case sensitive  (tidak peduli besar dan kecil huruf).</li>
+    <li>?reading : Bernilai 0 atau 1. Bila 0, maka tampilkan buku yang sedang tidak dibaca (reading: false). Bila 1, maka tampilkan buku yang sedang dibaca (reading: true). Selain itu, tampilkan buku baik sedang dibaca atau tidak.</li>
+    <li>?finished : Bernilai 0 atau 1. Bila 0, maka tampilkan buku yang sudah belum selesai dibaca (finished: false). Bila 1, maka tampilkan buku yang sudah selesai dibaca (finished: true). Selain itu, tampilkan buku baik yang sudah selesai atau belum dibaca.</li>
+</ul></ul>
+<ul>
+  <li>Menerapkan CORS pada seluruh resource yang ada.</li>
+</ul>
+<ul>
+  <li>Menggunakan ESLint dan salah satu style guide agar gaya penulisan kode JavaScript lebih konsisten.</li>
+</ul>
+
+Berikut adalah detail penilaian submission:
+
+<ul>
+  <li><b>Bintang 1</b> : Semua ketentuan wajib terpenuhi, namun terdapat indikasi kecurangan dalam mengerjakan submission.</li>
+  <li><b>Bintang 2</b> : Semua ketentuan wajib terpenuhi, namun terdapat kekurangan pada penulisan kode. Seperti tidak menerapkan modularization atau gaya penulisan tidak konsisten.</li>
+  <li><b>Bintang 3</b> : Semua ketentuan wajib terpenuhi, namun tidak terdapat improvisasi atau persyaratan opsional yang dipenuhi.</li>
+  <li><b>Bintang 4</b> : Semua ketentuan wajib terpenuhi dan menerapkan minimal satu persyaratan opsional.</li>
+  <li><b>Bintang 5</b> : Semua ketentuan wajib terpenuhi dan menerapkan seluruh persyaratan opsional yang ada.</li>
+</ul>

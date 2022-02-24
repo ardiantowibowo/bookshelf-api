@@ -1,5 +1,5 @@
 # Bookshelf API
-Proyek <b>Bookshelf API</b> adalah submission <a href="https://www.dicoding.com">dicoding</a> yang saya kerjakan untuk lulus dari kelas back-end.
+Proyek <b>Bookshelf API</b> adalah submission <a href="https://www.dicoding.com">dicoding</a> yang saya kerjakan untuk lulus dari kelas back-end. Dalam proses pembuatan web server, saya menggunakan framework <a href="https://hapi.dev">hapi</a>.
 <br>Berikut beberapa kriteria dari Bookshelf API dalam project ini:</br>
 
 <b>Kriteria 1 : API dapat menyimpan buku</b>
